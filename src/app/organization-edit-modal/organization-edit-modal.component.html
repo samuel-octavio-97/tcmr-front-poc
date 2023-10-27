@@ -1,0 +1,63 @@
+<h1 mat-dialog-title>Edit Organization</h1>
+
+
+<div mat-dialog-content style="padding-top: 5%;">
+
+    <form [formGroup]="tcmrEditForm" (ngSubmit)="onEdit()">
+
+
+
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-4">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Name </mat-label>
+                        <input matInput id="editname" type="text" formControlName="name" />
+                        <mat-error *ngIf="tcmrEditForm.get('name')?.hasError('required')">
+                            Name is required
+                           </mat-error>
+                    </mat-form-field>
+                </div>
+
+
+
+                <div class="col-4">
+                    <mat-form-field appearance="outline">
+                        <mat-label>NSC Code </mat-label>
+                        <input matInput id="editnsc_code" formControlName="nsc_code" />
+                        <mat-error *ngIf="tcmrEditForm.get('name')?.hasError('required')">
+                            NSC code is required
+                           </mat-error>
+                    </mat-form-field>
+                </div>
+
+
+
+                <div class="col-4">
+
+                    <mat-checkbox id="editDealerVivible" class="example-margin" formControlName="dealer_visible">Dealer Visible</mat-checkbox>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+     
+
+        <div class="edit-buttons-container">
+            <button mat-raised-button class="edit-button" type="submit">Submit</button>
+            <button mat-raised-button  class="cancel-button" type="button" (click)="closeDialog()">Cancel</button>
+        </div>
+
+       
+    </form>
+
+
+</div>
+

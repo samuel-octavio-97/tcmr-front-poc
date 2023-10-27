@@ -1,0 +1,76 @@
+{
+  "organizations": [
+    {
+      "name": "Liongate prod",
+      "nsc_code": "12312",
+      "dealer_visible": false,
+      "created": "2023-10-26T16:21:18.234Z",
+      "createdBy": "Rita Ferreira",
+      "id": 1
+    },
+    {
+      "name": "Mazda",
+      "nsc_code": "67",
+      "dealer_visible": false,
+      "created": "2023-10-26T16:21:25.304Z",
+      "createdBy": "Rita Ferreira",
+      "id": 2
+    },
+    {
+      "name": "torg",
+      "nsc_code": "3434",
+      "dealer_visible": false,
+      "created": "2023-10-26T16:45:44.689Z",
+      "createdBy": "Rita Ferreira",
+      "id": 3
+    },
+    {
+      "name": "teste",
+      "nsc_code": "190",
+      "dealer_visible": false,
+      "created": "2023-10-27T11:28:59.908Z",
+      "createdBy": "Rita Ferreira",
+      "id": 4
+    },
+    {
+      "name": "teste2",
+      "nsc_code": "34",
+      "dealer_visible": false,
+      "created": "2023-10-27T11:29:01.470Z",
+      "createdBy": "Rita Ferreira",
+      "id": 5
+    },
+    {
+      "name": "teste24",
+      "nsc_code": "34",
+      "dealer_visible": false,
+      "created": "2023-10-27T11:29:03.614Z",
+      "createdBy": "Rita Ferreira",
+      "id": 6
+    },
+    {
+      "name": "teste244",
+      "nsc_code": "34",
+      "dealer_visible": false,
+      "created": "2023-10-27T11:29:07.261Z",
+      "createdBy": "Rita Ferreira",
+      "id": 7
+    },
+    {
+      "name": "45",
+      "nsc_code": "45",
+      "dealer_visible": false,
+      "created": "2023-10-27T11:29:32.756Z",
+      "createdBy": "Rita Ferreira",
+      "id": 8
+    },
+    {
+      "name": "yyyyy",
+      "nsc_code": "45",
+      "dealer_visible": false,
+      "created": "2023-10-27T11:29:41.737Z",
+      "createdBy": "Rita Ferreira",
+      "id": 9
+    }
+  ]
+}

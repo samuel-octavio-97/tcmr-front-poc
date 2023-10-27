@@ -1,0 +1,39 @@
+
+<div style="margin: 25px;">
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Add Organization
+        </mat-panel-title>
+      
+      </mat-expansion-panel-header>
+  
+      <app-add-organization (formSubmitted)="onSubmit()" [tcmrAddForm]="tcmrAddForm"></app-add-organization>
+  
+     
+    </mat-expansion-panel>
+     
+  </div>
+
+
+
+<div style="margin: 25px;">
+  <mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Query Data
+      </mat-panel-title>
+    
+    </mat-expansion-panel-header>
+
+    <app-tcmr-form  (getData)="searchOrganizations($event)" ></app-tcmr-form>
+
+   
+  </mat-expansion-panel>
+   
+</div>
+
+
+
+
+<app-tcmr-data-table [dataSource]="dataSource" (openDialogRequested)="onOpenDialogRequested($event)"></app-tcmr-data-table>

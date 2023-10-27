@@ -1,0 +1,17 @@
+.edit-buttons-container{
+    display: flex;
+   float: right;
+}
+
+
+.edit-button {
+    background-color: black;
+    color: white;
+    margin: 1%;
+}
+
+.cancel-button{
+    background-color: white;
+    color: black;
+    margin: 1%;
+}

@@ -1,0 +1,42 @@
+<div>
+
+    <form [formGroup]="tcmrAddForm" (ngSubmit)="onFormSubmit()">
+
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-4">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Name: </mat-label>
+                        <input matInput id="addname" type="text" formControlName="name" />
+                        <mat-error *ngIf="tcmrAddForm.get('name')?.hasError('required')">
+                           Name is required
+                          </mat-error>
+                    </mat-form-field>
+                </div>
+               
+
+                <div class="col-4">
+                    <mat-form-field appearance="outline">
+                        <mat-label>NSC Code: </mat-label>
+                        <input matInput id="addnsc_code" formControlName="nsc_code" />
+                        <mat-error *ngIf="tcmrAddForm.get('name')?.hasError('required')">
+                            NSC code is required
+                           </mat-error>
+                    </mat-form-field>
+                </div>
+
+
+                <div class="col-4">
+                    <mat-checkbox id="addDealerVisible" class="example-margin" formControlName="dealer_visible">Dealer Visible</mat-checkbox>
+                </div>
+            </div>
+        </div>
+
+
+<div class="submit-button-container">
+        <button mat-raised-button class="submit-button" type="submit">Add</button>
+    </div>
+    </form>
+</div>

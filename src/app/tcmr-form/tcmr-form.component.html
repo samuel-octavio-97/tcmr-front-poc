@@ -1,0 +1,86 @@
+<div>
+
+
+
+    <form [formGroup]="tcmrForm" (ngSubmit)="onSubmit()">
+
+
+
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-4">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Name: </mat-label>
+                        <input matInput id="search_name" type="text" formControlName="name" />
+                    </mat-form-field>
+                </div>
+
+
+
+                <div class="col-4">
+                    <mat-form-field appearance="outline">
+                        <mat-label>nsc_code: </mat-label>
+                        <input matInput id="search_nsc_code" formControlName="nsc_code" />
+                    </mat-form-field>
+                </div>
+
+
+
+                <div class="col-4">
+
+                    <mat-checkbox id="search_dealer_visible" class="example-margin" formControlName="dealer_visible">Dealer Visible</mat-checkbox>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-4">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Created</mat-label>
+                        <input id="search_created" matInput [matDatepicker]="picker" formControlName="created">
+
+                        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                </div>
+
+
+                <div class="col-4">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Created by: </mat-label>
+                        <input id="search_createdBy"  matInput id="createdBy" formControlName="createdBy" />
+                    </mat-form-field>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+<div class="submit-button-container">
+
+        <button mat-raised-button class="submit-button" type="submit">Query</button>
+    </div>
+
+
+    </form>
+</div>
